@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Controller.Fragment.TicTacToeFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="">
+
+        <TextView
+            android:id="@+id/Game_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/game_tic_tac_toe"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="653dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/Row_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/pos_0.0"
+                android:layout_width="102dp"
+                android:layout_height="74dp" />
+
+            <Button
+                android:id="@+id/pos_0.1"
+                android:layout_width="102dp"
+                android:layout_height="74dp" />
+
+            <Button
+                android:id="@+id/pos_0.2"
+                android:layout_width="102dp"
+                android:layout_height="74dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Row_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/pos_1.0"
+                android:layout_width="102dp"
+                android:layout_height="74dp" />
+
+            <Button
+                android:id="@+id/pos_1.1"
+                android:layout_width="102dp"
+                android:layout_height="74dp" />
+
+            <Button
+                android:id="@+id/pos_1.2"
+                android:layout_width="102dp"
+                android:layout_height="74dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Row_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/pos_2.0"
+                android:layout_width="102dp"
+                android:layout_height="74dp" />
+
+            <Button
+                android:id="@+id/pos_2.1"
+                android:layout_width="102dp"
+                android:layout_height="74dp" />
+
+            <Button
+                android:id="@+id/pos_2.2"
+                android:layout_width="102dp"
+                android:layout_height="74dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

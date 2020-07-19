@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Controller.Activity.GameSelectPage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/Tic_Tac_Toe"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tic_tac_toe" />
+
+        <Button
+            android:id="@+id/Four_in_a_Row"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:text="@string/_4_in_a_row" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/Container_Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
