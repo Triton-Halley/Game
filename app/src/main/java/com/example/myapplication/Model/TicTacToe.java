@@ -13,15 +13,14 @@ public class TicTacToe {
             }
         }
     }
-
-    public boolean isEmpty(int rows, int columns) {
-        boolean flag = false;
-        if (page[rows][columns] == ' ') {
-            flag = true;
-        } else {
-            flag = false;
+    //Finish game and Empty page Array
+    public void empty() {
+        for (int i = 0; i < page.length; i++) {
+            for (int j = 0; j < page.length; j++) {
+                // ' - ' mean E empty
+                page[i][j] = ' ';
+            }
         }
-        return flag;
     }
 
     public void enterValue(char Operator, int rows, int columns) {
@@ -34,7 +33,7 @@ public class TicTacToe {
         int CounterColumnsO = 0;
         int CounterColumnsX = 0;
 
-        GameResult gameResult;
+        GameResult gameResult = null;
         if (page[0][0] == 'X' && page[1][1] == 'X' && page[2][2] == 'X') {
             gameResult = GameResult.X_WINS;
         } else if (page[0][0] == 'O' && page[1][1] == 'O' && page[2][2] == 'O') {
@@ -54,6 +53,16 @@ public class TicTacToe {
                         CounterRowsO++;
                     }
                 }
+                gameResult = gameResultColumnsAndRows(CounterColumnsO, CounterColumnsX,CounterRowsX,CounterRowsO);
+                if (gameResult== GameResult.O_WINS||gameResult==GameResult.X_WINS){
+                    CounterRowsX = 0;
+                    CounterRowsO = 0;
+                    return gameResult ;
+                }else{
+                    CounterRowsX = 0;
+                    CounterRowsO = 0;
+                }
+
             }
             for (int i = 0; i < page.length; i++) {
                 for (int j = 0; j < page.length; j++) {
@@ -65,10 +74,19 @@ public class TicTacToe {
                         CounterColumnsO++;
                     }
                 }
+                gameResult = gameResultColumnsAndRows(CounterColumnsO, CounterColumnsX,CounterRowsX,CounterRowsO);
+                if (gameResult== GameResult.O_WINS||gameResult==GameResult.X_WINS){
+                    CounterColumnsO = 0;
+                    CounterColumnsX = 0;
+                    return gameResult ;
+                }else{
+                    CounterColumnsO = 0;
+                    CounterColumnsX = 0;
+                }
+
+
             }
-            gameResult = gameResultColumnsAndRows(CounterColumnsO, CounterColumnsX,CounterRowsX,CounterRowsO);
-            CounterRowsX = 0;
-            CounterRowsO = 0;
+
         }
         return gameResult;
     }

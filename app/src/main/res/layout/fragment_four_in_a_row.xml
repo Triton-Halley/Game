@@ -1,14 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Controller.Fragment.FourInARowFragment">
+    tools:context=".Controller.Fragment.FourInARowFragment"
+    android:orientation="vertical"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+        <TextView
+            android:id="@+id/FGame_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/game_4_in_a_row"
+            android:textSize="30sp" />
+    </LinearLayout>
+    // add a name or character in id name (game name )
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="517dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <LinearLayout
+            android:id="@+id/FRow_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/Fpos_0.0"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+
+            <Button
+                android:id="@+id/Fpos_0.1"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+
+            <Button
+                android:id="@+id/Fpos_0.2"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+            <Button
+                android:id="@+id/Fpos_0.3"
+                android:layout_width="67dp"
+                android:layout_height="58dp"/>
+            <Button
+                android:id="@+id/Fpos_0.4"
+                android:layout_width="67dp"
+                android:layout_height="58dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/FRow_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Fpos_1.0"
+                android:layout_width="67dp"
+                android:layout_height="58dp"/>
+
+            <Button
+                android:id="@+id/Fpos_1.1"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+
+            <Button
+                android:id="@+id/Fpos_1.2"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+            <Button
+                android:id="@+id/Fpos_1.3"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+
+            <Button
+                android:id="@+id/Fpos_1.4"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/FRow_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Fpos_2.0"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+
+            <Button
+                android:id="@+id/Fpos_2.1"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+
+            <Button
+                android:id="@+id/Fpos_2.2"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+            <Button
+                android:id="@+id/Fpos_2.3"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+
+            <Button
+                android:id="@+id/Fpos_2.4"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/FRow_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Fpos_3.0"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+
+            <Button
+                android:id="@+id/Fpos_3.1"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+
+            <Button
+                android:id="@+id/Fpos_3.2"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+            <Button
+                android:id="@+id/Fpos_3.3"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+
+            <Button
+                android:id="@+id/Fpos_3.4"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/FRow_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Fpos_4.0"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+
+            <Button
+                android:id="@+id/Fpos_4.1"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+
+            <Button
+                android:id="@+id/Fpos_4.2"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+            <Button
+                android:id="@+id/Fpos_4.3"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+
+            <Button
+                android:id="@+id/Fpos_4.4"
+                android:layout_width="67dp"
+                android:layout_height="58dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
